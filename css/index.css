@@ -1,0 +1,340 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-bottom: 20%;
+}
+
+
+/* header strip styles */
+
+.header-strip{
+    padding: 10px 200px 10px 200px;
+    background-color: #0296BA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.header-strip-left{
+    display: flex;
+    gap: 15px;
+     color: #ffffff;
+}
+
+.header-strip-right{
+    display: flex;
+    gap: 25px;
+}
+
+.header-strip-right a{
+    text-decoration: none;
+     color: #ffffff;
+}
+
+.icon-one{
+    font-size: 15px;
+ }
+ 
+
+/* navigation bar styles */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 200px 5px 200px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    transition: top 0.3s ease;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list .list-items a{
+    text-decoration: none;
+    color: #233329;
+}
+
+.nav-btn{
+    background-color: #1e7e91;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+
+
+/* section 1 : hero styles */
+
+.hero-section{
+    height: 90vh;
+    background-image: url("../resourses/copy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 200px 0px 200px;
+}
+
+.hero-sec-text{
+    color: #ffffff;
+    padding-top: 22%;
+}
+
+.hero-sec-text p{
+    color: #69FFF1;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.hero-sec-text h1{
+    font-size: 4.5em;
+}
+
+.hero-sec-text ul{
+    padding-top: 5px;
+    list-style: none;
+}
+
+
+/* section 2 : three box styles */
+
+.section-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 30vh;
+    padding: 0px 200px 0px 200px;
+    margin-top: 5%;
+}
+
+.section-two .left-col{
+    background-color: #1e7e91;
+}
+
+.section-two .middle-col{
+    background-color: #3fa2b6;
+}
+
+.section-two .right-col{
+    background-color: #9adce9;
+}
+
+/* section 3 */
+
+.section-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 200px 0px 200px;
+    margin-top: 5%;
+    gap: 15px;
+    align-items: center;
+}
+
+.section-three .left-col{
+    display: grid;
+    row-gap: 5px;
+    color: #233329;
+}
+
+.section-three .left-col .sub{
+   
+    font-size: 1em;
+    font-weight: bold;
+    color: #1e7e91;
+}
+
+.section-three .left-col h3{
+    font-size: 2em;
+    color: #233329;
+}
+
+.section-three .left-col .button-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.section-three .left-col .button-group .btn-two{
+    border: none;
+    border-radius: 2px;
+    background-color: #0296BA;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.section-three .left-col .button-group .btn-three{
+    
+    border-radius: 2px;
+    border: solid #0296BA 1px;
+    color: #233329;
+    padding: 10px 30px;
+    
+}
+
+.section-three .right-col{
+    background-image: url("../resourses/image-two.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* banner */
+
+.banner{
+    margin-top: 5%;
+    padding: 0px 200px 0px 200px;
+}
+
+.banner-inside{
+    padding: 15px 20px 15px 20px;
+    border: solid #b4b8b5 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.banner-inside .left-col{
+    background-image: url("../resourses/image-two.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15vh;
+    width: 15%;
+}
+
+
+.banner-inside .right-col .btn-four{
+    border: none;
+    border-radius: 2px;
+    background-color: #0296BA;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+
+/* section 4 */
+
+.section-four{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 200px 0px 200px;
+    margin-top: 5%;
+    gap: 45px;
+    align-items: center;
+}
+
+.section-four .left-col{
+    display: grid;
+    row-gap: 5px;
+    color: #233329;
+}
+
+.section-four .left-col .sub{
+   
+    font-size: 1em;
+    font-weight: bold;
+    color: #1e7e91;
+}
+
+.section-four .left-col h3{
+    font-size: 2em;
+    color: #233329;
+}
+
+.section-four .left-col .button-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.section-four .left-col .button-group .btn-two{
+    border: none;
+    border-radius: 2px;
+    background-color: #0296BA;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.section-four .left-col .button-group .btn-three{
+    
+    border-radius: 2px;
+    border: solid #0296BA 1px;
+    color: #233329;
+    padding: 10px 30px;
+    
+}
+
+.section-four .right-col{
+    background-image: url("../resourses/clinic-registration-counter-waiting-room-lobby-computer-make-checkup-appointments-with-healthcare-report-papers-empty-hospital-reception-desk-with-medical-forms-insurance-support.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.section-five{
+    margin-top: 5%;
+    background-image: url("../resourses/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
