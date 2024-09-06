@@ -18,3 +18,15 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("mySidenav").style.padding = "10px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0"
+    document.getElementById("mySidenav").style.padding = "0";
+    
+  }

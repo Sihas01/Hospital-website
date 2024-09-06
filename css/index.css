@@ -50,7 +50,7 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 2px;
-  }
+}
 
 /* header strip styles */
 
@@ -64,14 +64,14 @@
 }
 
 .header-strip-left {
+    text-decoration: none;
     display: flex;
     gap: 15px;
     color: #ffffff;
 }
-
 .header-strip-right {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
 .header-strip-right a {
@@ -106,7 +106,7 @@ nav {
     background-color: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
     transition: top 0.3s ease;
 }
 
@@ -132,7 +132,75 @@ nav {
     color: #ffffff;
     font-weight: 600;
     border-radius: 2px;
+    display: none;
 }
+
+
+
+.hamburger {
+    display: block;
+    font-size: 30px;
+    color: #1e7e91;
+    cursor: pointer;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+   
+    
+  }
+
+  .sidenav > img{
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #000;
+  }
+  
+  .sidenav .closebtn {
+    
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .btn-sidebar{
+    margin-top: 15px;
+    background-color: #1e7e91;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2px;
+    text-align: center;
+    
+  }
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 
 
 /* section 1 : hero styles */
@@ -505,17 +573,17 @@ nav {
 
 .section-seven .left-col {
     background-image: url("../resourses/doctor.png");
-    height: 50vh;
+    height: 60vh;
 }
 
-.section-seven .left{
+.section-seven .left {
     background-color: black;
-    height: 50vh;
-   }
+    
+}
 
-   .section-seven .right{
+.section-seven .right {
     height: auto;
-   }
+}
 
 
 .section-seven .right-col {
@@ -524,7 +592,7 @@ nav {
     display: grid;
     row-gap: 25px;
 
-    
+
 }
 
 .text2 {
@@ -535,10 +603,11 @@ nav {
     font-size: 2.5rem;
     letter-spacing: 0.5px;
     color: #0296BA;
+    text-decoration: none;
 }
 
 .btn1 {
-   
+
     background-color: #1e7e91;
     padding: 15px 25px;
     color: #ffffff;
@@ -553,26 +622,28 @@ nav {
 
 footer {
     background-color: #ffffff;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
     border-top: 1px solid #ccc;
 
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 20px;
+    
 }
 
 .footer-left {
-    max-width: 25%;
+    max-width: 90%;
+    margin-bottom: 20px;
 }
 
 .footer-logo {
     width: 140px;
     height: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 .footer-left p {
@@ -582,7 +653,7 @@ footer {
 
 .footer-right {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 70%;
 }
 
@@ -634,11 +705,17 @@ footer {
 @media (min-width: 992px) {
 
 
+
     /* header strip styles */
 
     .header-strip {
         padding: 10px 200px 10px 200px;
         font-size: 14px;
+    }
+
+    .header-strip-right {
+        display: flex;
+        gap: 35px;
     }
 
     /* navigation bar styles */
@@ -653,6 +730,21 @@ footer {
         list-style: none;
     }
 
+    .nav-btn{
+        display: block;
+    }
+
+
+    .hamburger{
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .sidenav {
+       display: none;
+       
+    }
 
     /* section 1 : hero styles */
 

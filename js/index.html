@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            position: relative;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            /* Hidden by default */
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .sidebar-btn {
+            font-size: 30px;
+            cursor: pointer;
+            padding: 15px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        #main-content {
+            transition: margin-left 0.3s;
+            padding: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="sidebar" id="sidebar">
+            <div class="closebtn" id="closebtn">&times;</div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="sidebarBtn" class="sidebar-btn">
+            &#9776;
+        </div>
+    </header>
+    <div id="main-content">
+        <h1>Main Content</h1>
+        <p>Welcome to the main content area. Click on the hamburger menu to toggle the sidebar.</p>
+    </div>
+    <script>
+        document.getElementById('sidebarBtn').addEventListener('click', function () {
+            document.getElementById('sidebar').style.left = '0';
+            document.getElementById('main-content').style.marginLeft = '250px';
+        });
+
+        document.getElementById('closebtn').addEventListener('click', function () {
+            document.getElementById('sidebar').style.left = '-250px';
+            document.getElementById('main-content').style.marginLeft = '0';
+        });
+
+    </script>
+</body>
+
+</html>
