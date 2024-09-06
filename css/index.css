@@ -210,6 +210,9 @@ nav {
     background-image: url("../resourses/copy.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    
+   
 }
 
 .hero-sec-text {
@@ -307,7 +310,7 @@ nav {
 }
 
 .section-three .right-col {
-    background-image: url("../resourses/image-two.jpg");
+    background-image: url("../resourses/image-six.jpg");
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -334,7 +337,7 @@ nav {
 }
 
 .banner-inside .left-col {
-    background-image: url("../resourses/image-two.jpg");
+    background-image: url("../resourses/image-seven.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -416,7 +419,7 @@ nav {
 }
 
 .section-four .right-col {
-    background-image: url("../resourses/clinic-registration-counter-waiting-room-lobby-computer-make-checkup-appointments-with-healthcare-report-papers-empty-hospital-reception-desk-with-medical-forms-insurance-support.jpg");
+    background-image: url("../resourses/image-three.jpg");
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -492,7 +495,7 @@ nav {
 }
 
 .section-six .right-col {
-    background-image: url("../resourses/image-two.jpg");
+    background-image: url("../resourses/image-five.jpg");
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -524,7 +527,7 @@ nav {
 }
 
 .box-group .left-col .top {
-    background-image: url("../resourses/image-two.jpg");
+    background-image: url("../resourses/image-four.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -572,8 +575,10 @@ nav {
 }
 
 .section-seven .left-col {
-    background-image: url("../resourses/doctor.png");
+    background-image: url("../resourses/hjh.jpg");
     height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-seven .left {
@@ -750,6 +755,7 @@ footer {
 
     .hero-section {
         padding: 0px 200px 0px 200px;
+        background-position: unset;
     }
 
     /* section 2 : three box styles */
@@ -837,6 +843,26 @@ footer {
         padding: 80px 200px 80px 200px;
     }
 
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+
+    .footer-left {
+        max-width: 30%;
+
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
 }
 
 /* Large desktops and wide screens 
