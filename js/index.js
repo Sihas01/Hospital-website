@@ -30,3 +30,4 @@
     document.getElementById("mySidenav").style.padding = "0";
     
   }
+

@@ -32,7 +32,10 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
+
+
 
 /* back to top btn styles */
 
@@ -218,6 +221,7 @@ nav {
 .hero-sec-text {
     color: #ffffff;
     padding-top: 22%;
+    
 }
 
 .hero-sec-text p {
@@ -575,7 +579,7 @@ nav {
 }
 
 .section-seven .left-col {
-    background-image: url("../resourses/hjh.jpg");
+    background-image: url("../resourses/image-nine.jpg");
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -589,7 +593,6 @@ nav {
 .section-seven .right {
     height: auto;
 }
-
 
 .section-seven .right-col {
     padding: 0px 0px 0px 20px;
@@ -796,8 +799,6 @@ footer {
         margin-bottom: 0px;
     }
 
-
-
     /* section 4 */
 
     .section-four {
@@ -869,3 +870,77 @@ footer {
 @media (min-width: 1200px) {
    
 }*/
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes appear1{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear2{
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+@keyframes appear4{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+.section-three{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.section-four{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
+}
+
+.section-six{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.blog .left-col{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
