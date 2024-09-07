@@ -180,11 +180,22 @@ nav {
   
   .sidenav a:hover {
     color: #000;
+
+  }
+
+  .dropdown-btn{
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 8px 8px 8px 15px;
+    cursor: pointer;
+
   }
   
   .sidenav .closebtn {
     
     position: absolute;
+    color: #067c7c;
     top: 0;
     right: 25px;
     font-size: 36px;
@@ -205,6 +216,19 @@ nav {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 
+
+
+
+
+      .dropdown-container {
+        display: none;
+        padding-left: 8px;
+        
+      }
+
+      .dropdown-container a{
+        font-size: 15px;
+      }
 
 /* section 1 : hero styles */
 
@@ -291,7 +315,7 @@ nav {
 
 
 .section-two .right-col {
-    background-color: #9adce9;
+    background-color: #73c3d3;
     color: #ffffff;
     padding: 30px 20px 30px 20px;
     display: flex;
