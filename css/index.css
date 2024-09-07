@@ -244,21 +244,80 @@ nav {
 .section-two {
     display: grid;
     grid-template-columns: 1fr;
-    height: 30vh;
+    height: auto;
     margin-top: 8%;
 }
 
 .section-two .left-col {
     background-color: #1e7e91;
+    color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
+
+.section-two .left-col .sub{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #dddfdf;
+}
+
+.section-two .left-col h3 {
+    font-size: 1.5em;
+}
+
 
 .section-two .middle-col {
     background-color: #3fa2b6;
+    color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
+
+.section-two .middle-col .sub{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #dddfdf;
+}
+
+.section-two .middle-col h3 {
+    font-size: 1.5em;
+}
+
 
 .section-two .right-col {
     background-color: #9adce9;
+    color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
+
+.section-two .right-col .sub{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #067c7c;
+}
+
+.section-two .right-col h3 {
+    font-size: 1.5em;
+}
+
+.section-two .right-col .btn-two{
+    border: none;
+    border-radius: 2px;
+    background-color: #0296BA;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
 
 
 /* section 3 */
@@ -736,6 +795,7 @@ footer {
         display: flex;
         gap: 30px;
         list-style: none;
+        align-items: center;
     }
 
     .nav-btn{
@@ -748,6 +808,46 @@ footer {
         font-size: 30px;
         cursor: pointer;
     }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+    
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(7, 5, 5);
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    
+      /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+    
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
 
     .sidenav {
        display: none;
