@@ -5,12 +5,12 @@ const CACHE_NAME = 'my-cache-v1';
 
 // Files to cache
 const URLs_TO_CACHE = [
-  '/Hospital-website/',
-  '/Hospital-website/index.html',
-  '/Hospital-website/css/index.css',
-  '/Hospital-website/css/common.css',
-  '/Hospital-website/index.js',
-  '/Hospital-website/resourses/logo.jpg'
+  '/',
+  '/index.html',
+  '/css/index.css',
+  '/css/common.css',
+  '/js/index.js',
+  '/resourses/logo.jpg'
 ];
 
 // Install event
