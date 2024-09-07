@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/doctos.css">
+    <!---import icon from react-icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <!--Header strip start-->
+    <div class="header-strip roboto-regular">
+
+        <div class="header-strip-left">
+            <span><i class="bi bi-geo-alt-fill icon-one"></i> Colombo, Sri Lanka</span>
+            <span><i class="bi bi-telephone-fill icon-one"></i> (011) 4538894</span>
+        </div>
+
+        <div class="header-strip-right">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+        </div>
+
+    </div>
+
+
+
+    <!------navigation bar-->
+    <nav>
+        <div class="nav-left">
+            <img src="../resourses/logo.jpg" alt="logo" height="70">
+        </div>
+
+        <div class="nav-right roboto-regular">
+            <div class="list ">
+                <ul class="nav-list ">
+                    <li class="list-items"><a href="#">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn list-items">Service
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+
+                    <li class="list-items"><a href="#">Doctors</a></li>
+                    <li class="list-items"><a href="#">Pharmarcy</a></li>
+                    <li class="list-items"><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                Book Now
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger" onclick="openNav()">
+            &#9776;
+        </div>
+    </nav>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="../resourses/logo.jpg" alt="logo" height="70">
+        <div class="roboto-regular">
+            <div class="list">
+                <ul class="">
+                    <li class="list-items"><a href="#">Home</a></li>
+                    <button class="dropdown-btn">Service
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <li class="list-items"><a href="#">Doctors</a></li>
+                    <li class="list-items"><a href="#">Pharmarcy</a></li>
+                    <li class="list-items"><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="btn-sidebar">
+                Book Now
+            </div>
+        </div>
+    </div>
+
+
+    <button onclick="toTop()" id="top-btn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
+
+
+
+    <section class="breadcrumb-navigation">
+        <ul class="breadcrumb roboto-regular">
+            <li><a href="../index.html">Home</a></li>
+            <li>Doctors</li>
+        </ul>
+
+    </section>
+
+
+    <section class="doctors-info lato-regular">
+        <div class="discription-doc">
+            <h1>Our Doctos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eaque odit minima, quae sequi maiores
+                quos repudiandae animi labore repellendus dignissimos ipsam voluptate veritatis quaerat totam
+                doloremque, accusamus dolores?</p>
+        </div>
+
+
+        <div class="box">
+            <div class="box-one">
+                <div class="inside-box1">
+                </div>
+
+                <div class="text-inside">
+                    <h3>Dr. John Doe</h3>
+                    <h4>Mbbs blblblb</h4>
+                </div>
+            </div>
+
+
+            <div class="box-one">
+                <div class="inside-box2"></div>
+                <div class="text-inside">
+                    <h3>Dr. John Doe</h3>
+                    <h4>Mbbs blblblb</h4>
+                </div>
+            </div>
+            <div class="box-one">
+                <div class="inside-box3"></div>
+                <div class="text-inside">
+                    <h3>Dr. John Doe</h3>
+                    <h4>Mbbs blblblb</h4>
+                </div>
+            </div>
+
+            <div class="box-one">
+                <div class="inside-box4"></div>
+                <div class="text-inside">
+                    <h3>Dr. John Doe</h3>
+                    <h4>Mbbs blblblb</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-seven">
+        <div class="left">
+            <div class="left-col"></div>
+        </div>
+
+
+        <div class="right">
+            <div class="right-col">
+                <div class="text-box">
+                    <h1 class="lato-bold text2">There is any emergency ?</h1>
+                    <h4 class="lato-black text3">0401253568</h4>
+                    <p class="lato-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eius?
+                        Sed
+                        ratione iste, iure minus adipisci repudiandae, aspernatur deserunt sequi, aliquam dignissimos
+                        quibusdam neque quidem velit voluptates minima veritatis corrupti. </p>
+                </div>
+
+                <div class="button-box">
+                    <div class="btn1 lato-regular">
+                        Call Now
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-----footer---->
+    <footer>
+        <div class="footer-container lato-regular">
+            <div class="footer-left">
+                <img src="../resourses/logo.jpg" alt="Logo" class="footer-logo">
+                <p>Some text goes here describing the company or providing information.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Column 1</h3>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Column 2</h3>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Column 3</h3>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Column 4</h3>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom lato-regular">
+            ZenithCare &copy; 2024
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
