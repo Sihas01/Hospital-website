@@ -189,6 +189,7 @@ nav {
     padding: 8px 8px 8px 15px;
     cursor: pointer;
 
+
 }
 
 .sidenav .closebtn {
@@ -221,7 +222,9 @@ nav {
 }
 
 
-
+.dropbtn{
+    cursor: pointer;
+}
 
 
 .dropdown-container {

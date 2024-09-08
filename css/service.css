@@ -1,0 +1,109 @@
+.service-box, .registation-box{
+    padding: 10px 20px 10px 20px;
+
+    margin-top: 5%;
+    
+}
+
+.service-box .services-box{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.service-box .box1{
+
+    background-color: rgb(198, 239, 239);
+    margin-top: 5%;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 0 4px 22px rgba(35, 41, 50, 0.15);
+}
+
+
+.service-box .box1 .box1-middle{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+.service-box .box1 .box1-middle ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    list-style: none;
+    color: #514f4f;
+
+}
+
+.service-box .box1 .box1-bottom button{
+
+    margin-top: 5%;
+    background-color: #1e7e91;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+
+
+
+}
+
+
+.service-box .box1 .box1-bottom{
+    margin-top: 5%;
+}
+
+
+.registation-box .left-side{
+    background-image: url("../resourses/image-four.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+.registation-box .right-side{
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.registation-box .right-side button{
+
+    margin-top: 2%;
+    background-color: #1e7e91;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+
+
+
+}
+
+
+
+@media (min-width: 992px) {
+
+    .service-box{
+        padding: 10px 200px 10px 200px;
+        
+    }
+
+    .service-box .services-box{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .registation-box .right-side{
+        padding: 10px 200px 10px 200px;
+    }
+}
