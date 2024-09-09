@@ -1,0 +1,151 @@
+
+
+.about-us-sec-1{
+    padding:  10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: justify;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.about-us-sec-1 .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.about-us-sec-1 .pragraphs-group{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.about-us-sec-1 .image{
+    background-image: url("../resourses/abous-us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+
+.branches-section{
+    padding:  10px 20px 10px 20px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+
+.branches-section .branches-group .branch-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.branches-section .branches-group .branch-main .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.branches-section .branches-group .branch-main .media{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.branches-section .branches-group .branch-main .media .image-main{
+    background-image: url("../resourses/hospital.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+
+
+.branches-section .branches-group .branch-kandy{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.branches-section .branches-group .branch-kandy .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.branches-section .branches-group .branch-kandy .media{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.branches-section .branches-group .branch-kandy .media .image-main{
+    background-image: url("../resourses/hospital-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+
+.branches-section .branches-group .branch-galle{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.branches-section .branches-group .branch-galle .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.branches-section .branches-group .branch-galle .media{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.branches-section .branches-group .branch-galle .media .image-main{
+    background-image: url("../resourses/hospital-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+
+@media (min-width: 992px) {
+
+
+
+    .about-us-sec-1{
+        padding: 10px 200px 10px 200px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+
+    
+    .branches-section{
+        padding: 10px 200px 10px 200px;
+}
+
+.branches-section .branches-group .branch-main .media{
+    grid-template-columns: 1fr 1fr;
+}
+
+.branches-section .branches-group .branch-kandy .media{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.branches-section .branches-group .branch-galle .media{
+    grid-template-columns: 1fr 1fr;
+}
+
+}

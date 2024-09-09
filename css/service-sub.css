@@ -8,8 +8,6 @@
     grid-template-columns: 1fr;
     gap: 5%;
 
-
-
 }
 
 .box1-middle{
@@ -33,6 +31,10 @@
     margin-top: 15px;
     margin-bottom: 5%;
 }
+
+
+
+
 
 @media (min-width: 992px) {
 
