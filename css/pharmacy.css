@@ -1,0 +1,164 @@
+.pharmacy-intro{
+    padding:  10px 20px 10px 20px;
+    margin-top: 5%;
+}
+
+.pharmacy-image{
+    background-image: url("../resourses/pharmacy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-top: 5%;
+}
+
+
+
+
+form{
+    margin-top: 5%;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 2px;
+    padding:  10px 20px 10px 20px;
+    margin-top: 5%;
+    
+}
+
+.form-container .inside{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+.form-container .details{
+    text-align: justify;
+}
+
+.form-container .main-label{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #01447e;
+    font-weight: bold;
+}
+
+.form-group{
+    margin-top: 2%;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+}
+
+.column-2{
+    display: grid;
+    grid-template-columns: 3fr ;
+    gap: 15px;
+    align-items: center;
+}
+.form-group .input-group-one{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+}
+
+.form-group input,select,textarea{
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.form-group, .form-group-inline {
+    margin-bottom: 15px;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+}
+
+input[type="text"], select, textarea {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"].inline-input {
+    width: calc(50% - 10px);
+}
+
+textarea {
+    resize: none;
+}
+
+
+button {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #5fa8e9;
+    color: white;
+    margin-right: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+@media (min-width: 992px) {
+
+
+
+    .pharmacy-intro{
+        padding: 10px 200px 10px 200px;
+    }
+
+
+    .form-container{
+        padding: 10px 220px 10px 220px;
+    }
+    
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.column-2{
+    grid-template-columns: 3fr 1fr;
+}
+.form-group .input-group-one{
+    grid-template-columns: 1fr 2fr 2fr;
+
+}
+
+
+.form-group-inline {
+    flex-direction: row;
+    justify-content: center;
+}
+}
