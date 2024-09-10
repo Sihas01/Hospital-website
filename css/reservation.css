@@ -1,0 +1,153 @@
+
+.reservation-form{
+    padding: 10px 30px 10px 30px;
+    margin-top: 5%;
+    border-radius: 2px;
+    
+}
+
+
+.reservation-form .top-banner{
+    background-image: url("../resourses/reservation.jpg");
+    height: 40vh;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    margin-top: 5%;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    
+}
+
+.form-container .details{
+    text-align: justify;
+}
+
+.form-container .main-label{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #01447e;
+    font-weight: bold;
+}
+
+.form-group{
+    margin-top: 2%;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+}
+
+.column-2{
+    display: grid;
+    grid-template-columns: 3fr ;
+    gap: 15px;
+    align-items: center;
+}
+.form-group .input-group-one{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+}
+
+.form-group input,select{
+    width: 100%;
+}
+
+.form-group, .form-group-inline {
+    margin-bottom: 15px;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+}
+
+input[type="text"], select, textarea {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"].inline-input {
+    width: calc(50% - 10px);
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: white;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: black;
+    width: 100%;
+
+}
+
+
+@media (min-width: 992px) {
+
+
+
+.reservation-form{
+    padding: 10px 220px 10px 220px;
+}
+
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.column-2{
+    grid-template-columns: 3fr 1fr;
+}
+.form-group .input-group-one{
+    grid-template-columns: 1fr 2fr 2fr;
+
+}
+
+
+.form-group-inline {
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+}
