@@ -1,11 +1,9 @@
 
 .reservation-form{
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
     margin-top: 5%;
-    border-radius: 2px;
-    
+    border-radius: 2px;    
 }
-
 
 .reservation-form .top-banner{
     background-image: url("../resourses/reservation.jpg");
@@ -20,7 +18,7 @@ form{
 
 .form-container {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     
@@ -59,8 +57,10 @@ form{
     gap: 15px;
 }
 
-.form-group input,select{
+.form-group input,select,textarea{
     width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
 }
 
 .form-group, .form-group-inline {
@@ -82,8 +82,8 @@ label {
 
 input[type="text"], select, textarea {
     
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -94,28 +94,29 @@ input[type="text"].inline-input {
 
 textarea {
     resize: none;
-    width: 100%;
 }
 
 
 button {
-    padding: 10px 15px;
+    padding: 15px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .btn-primary {
-    background-color: #000;
+    background-color: #5fa8e9;
     color: white;
     margin-right: 10px;
     width: 100%;
+    font-size: 16px;
 }
 
 .btn-secondary {
     background-color: #fff;
     color: black;
     width: 100%;
+    font-size: 16px;
 
 }
 
