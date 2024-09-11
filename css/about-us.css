@@ -118,6 +118,22 @@
     height: 50vh;
 }
 
+.table{
+    padding:  10px 20px 10px 20px;
+    
+}
+
+.table table{
+    width: 100%;
+    border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+}
+
+table th,td{
+    border: 2px solid rgb(140 140 140);
+    padding: 10px;
+}
+
 
 @media (min-width: 992px) {
 
@@ -147,5 +163,11 @@
 .branches-section .branches-group .branch-galle .media{
     grid-template-columns: 1fr 1fr;
 }
+
+
+.table{
+    padding: 10px 200px 10px 200px;
+}
+
 
 }

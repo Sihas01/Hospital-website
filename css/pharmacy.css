@@ -100,7 +100,6 @@ textarea {
     resize: none;
 }
 
-
 button {
     padding: 15px 15px;
     border: none;
@@ -123,8 +122,12 @@ button {
     font-size: 16px;
 }
 
-@media (min-width: 992px) {
+.payment-options{
+    display: flex;
+    gap: 15px;
+}
 
+@media (min-width: 992px) {
 
 
     .pharmacy-intro{

@@ -6,8 +6,9 @@
 }
 
 .service-box .services-box{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .service-box .box1{
@@ -17,6 +18,7 @@
     padding: 30px;
     border-radius: 2px;
     box-shadow: 0 4px 22px rgba(35, 41, 50, 0.15);
+    width: 100%;
 }
 
 
@@ -98,8 +100,14 @@
         
     }
 
+    .box1 {
+        flex: 1 1 calc(33.333% - 15px);
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+      }
+
     .service-box .services-box{
-        grid-template-columns: 1fr 1fr 1fr;
+        
+       
         gap: 15px;
     }
 

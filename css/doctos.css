@@ -26,19 +26,21 @@
 
 .box .box-one .inside-box1{ 
     height: 70%;
-    background-image: url("../resourses/doc4-transformed.webp");
+    background-image: url("../resourses/doc4-transformed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #d4d6d6;
+    background-position: top;
     
 }
 
 .box .box-one .inside-box2{ 
     height: 70%;
-    background-image: url("../resourses/doc2.webp");
+    background-image: url("../resourses/doc2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #d4d6d6;
+    background-position: top;
     
 }
 
@@ -48,14 +50,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #d4d6d6;
+    background-position: top;
     
 }
 
 .box .box-one .inside-box4{ 
     height: 70%;
-    background-image: url("../resourses/doc3-transformed.webp");
+    background-image: url("../resourses/doc3-transformed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     background-color: #d4d6d6;
     
 }
