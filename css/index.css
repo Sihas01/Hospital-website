@@ -111,12 +111,11 @@
     font-size: 1.5em;
 }
 
-.section-two .right-col .btn-two {
-    border: none;
-    border-radius: 2px;
-    background-color: #0296BA;
-    color: #ffffff;
-    padding: 10px 20px;
+.section-two .right-col ol{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
 }
 
 
@@ -420,7 +419,25 @@
 }
 
 .box-group .left-col .top {
-    background-image: url("../resourses/image-four.jpg");
+    background-image: url("../resourses/blog-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    border-radius: 2px 0px 2px 0px;
+}
+
+.box-group .left-col .top2 {
+    background-image: url("../resourses/hospital-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    border-radius: 2px 0px 2px 0px;
+}
+
+.box-group .left-col .top3 {
+    background-image: url("../resourses/pharmacy.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -450,7 +467,7 @@
     padding: 10px 20px;
 }
 
-.box-group .left-col .details .button-group .link {
+.box-group .left-col .details .button-group .link{
     text-decoration: none;
     color: #233329;
 
@@ -476,7 +493,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0px 200px 0px 200px;
     }
-
 
     /* section 3 */
 

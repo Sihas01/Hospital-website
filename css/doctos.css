@@ -64,6 +64,36 @@
     
 }
 
+.box .box-one .inside-box5{ 
+    height: 70%;
+    background-image: url("../resourses/doc5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #d4d6d6;
+    
+}
+
+.box .box-one .inside-box6{ 
+    height: 70%;
+    background-image: url("../resourses/doc6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #d4d6d6;
+    
+}
+
+.box .box-one .inside-box5{ 
+    height: 70%;
+    background-image: url("../resourses/doc5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #d4d6d6;
+    
+}
+
 .box .box-one .text-inside{
     display: flex;
     flex-direction: column;
@@ -91,6 +121,10 @@
 
 .name-doctor{
     color: #0296BA;
+}
+
+.speciality{
+    color: #514f4f;
 }
 
 

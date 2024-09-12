@@ -64,12 +64,13 @@
 
 
 .registation-box .left-side{
-    background-image: url("../resourses/image-four.jpg");
+    background-image: url("../resourses/hjh.jpg");
     height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 2px;
+    box-shadow: 0 4px 22px rgba(35, 41, 50, 0.15);
 }
 
 .registation-box .right-side{

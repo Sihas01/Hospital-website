@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+body{
+    color: #233329;
+}
 
+/* remove link icon blue color in safari */
 a[href^="tel:"] {
     color: inherit;
     text-decoration: none;
     -webkit-touch-callout: none;
 }
 
-.dropbtn{
+.dropbtn {
     color: inherit;
     text-decoration: none;
     -webkit-touch-callout: none;
@@ -229,7 +233,7 @@ nav {
 }
 
 
-.dropbtn{
+.dropbtn {
     cursor: pointer;
 }
 
@@ -246,39 +250,39 @@ nav {
 
 
 
-.breadcrumb-navigation{
+.breadcrumb-navigation {
     background-image: url("../resourses/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg");
     background-position: left;
     background-repeat: no-repeat;
-    
-    
+
+
 }
 
 .breadcrumb-navigation .breadcrumb {
     padding: 70px 20px 70px 20px;
     list-style: none;
-  }
-  
-  .breadcrumb-navigation .breadcrumb li {
+}
+
+.breadcrumb-navigation .breadcrumb li {
     display: inline;
     font-size: 18px;
-  }
-  
-  .breadcrumb-navigation .breadcrumb li+li:before {
+}
+
+.breadcrumb-navigation .breadcrumb li+li:before {
     padding: 5px;
     color: black;
     content: "/\00a0";
-  }
-  
-  .breadcrumb-navigation .breadcrumb li a {
+}
+
+.breadcrumb-navigation .breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
-  }
-  
-  .breadcrumb-navigation .breadcrumb li a:hover {
+}
+
+.breadcrumb-navigation .breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
-  }
+}
 
 
 /* section-seven */
@@ -416,7 +420,7 @@ footer {
 }
 
 
-
+/* for larger screens */
 
 @media (min-width: 992px) {
 
@@ -470,12 +474,10 @@ footer {
         color: rgb(7, 5, 5);
         background-color: inherit;
         font-family: inherit;
-        /* Important for vertical align on mobile phones */
         margin: 0;
-        /* Important for vertical align on mobile phones */
     }
 
-    /* Dropdown content (hidden by default) */
+    /* Dropdown content  */
     .dropdown-content {
         display: none;
         position: absolute;
@@ -506,11 +508,11 @@ footer {
     }
 
 
-    .breadcrumb-navigation{
+    .breadcrumb-navigation {
         background-size: cover;
         padding: 5px 200px 5px 200px;
-        
-        
+
+
     }
 
 
