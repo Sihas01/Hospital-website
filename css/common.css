@@ -380,6 +380,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 70%;
+    row-gap: 15px;
 }
 
 .footer-column {
