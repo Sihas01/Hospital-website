@@ -170,6 +170,7 @@
     background-color: #0296BA;
     color: #ffffff;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .section-three .left-col .button-group .btn-three {
@@ -178,6 +179,7 @@
     border: solid #0296BA 1px;
     color: #233329;
     padding: 10px 30px;
+    cursor: pointer;
 
 }
 
@@ -286,6 +288,7 @@
     background-color: #0296BA;
     color: #ffffff;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .section-four .left-col .button-group .btn-three {
@@ -294,6 +297,7 @@
     border: solid #0296BA 1px;
     color: #233329;
     padding: 10px 30px;
+    cursor: pointer;
 
 }
 
@@ -370,6 +374,7 @@
     background-color: #0296BA;
     color: #ffffff;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .section-six .left-col .button-group .btn-three {
@@ -378,6 +383,7 @@
     border: solid #0296BA 1px;
     color: #233329;
     padding: 10px 30px;
+    cursor: pointer;
 
 }
 
@@ -451,12 +457,6 @@
 }
 
 
-
-/* Tablets (portrait and landscape) */
-@media (min-width: 600px) {}
-
-/* Small laptops and larger tablets (landscape) */
-@media (min-width: 768px) {}
 
 /* Desktops */
 @media (min-width: 992px) {

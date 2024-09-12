@@ -130,8 +130,17 @@
 }
 
 table th,td{
-    border: 2px solid rgb(140 140 140);
+    border: 2px solid rgb(252, 252, 252);
     padding: 10px;
+    background-color: rgb(198, 239, 239);
+}
+
+table th{
+    background-color: rgb(131, 212, 212);
+}
+
+.table-footer{
+    text-align: center;
 }
 
 

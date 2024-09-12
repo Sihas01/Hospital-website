@@ -89,6 +89,10 @@
     box-shadow: 0 4px 22px rgba(35, 41, 50, 0.15);
 }
 
+.name-doctor{
+    color: #0296BA;
+}
+
 
 @media (min-width: 992px) {
 

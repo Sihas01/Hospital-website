@@ -20,6 +20,10 @@
 
 }
 
+.sub-text{
+    color: #514f4f;
+}
+
 
 .img-sub-one{
     background-image: url("../resourses/image-four.jpg");
@@ -48,6 +52,10 @@
         gap: 20px;
         align-items: center;
     
+    }
+
+    .img-sub-one{
+        height: 100%;
     }
 
 }
