@@ -1,0 +1,156 @@
+.mt-5 {
+    margin-top: 5%;
+}
+
+.products {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-image {
+    width: 300px;
+}
+
+
+.item .disctiption {
+    margin-top: 25px;
+}
+
+.disctiption input {
+    width: 200px;
+    height: 22px;
+    padding-left: 10px;
+
+
+}
+
+.disctiption button {
+    height: 25px;
+    width: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.favouriteBtn{
+    margin-top: 15px;
+    height: 30px;
+    width: 50px;
+    background-color: #f96262;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#applyBtn{
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #397e13;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.analgesics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (min-width: 992px) {
+
+
+    .pharmacy-intro,
+    .products,
+    .products-tabel {
+        padding: 10px 200px 10px 200px;
+    }
+
+
+    /* Style the table itself */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+
+    th,
+    td {
+        border: 1px solid rgb(75, 75, 75);
+        padding: 8px;
+        text-align: left;
+    }
+
+
+    th {
+        background-color: #f8f8f8;
+        font-weight: bold;
+    }
+
+    .deleteBtn {
+        background-color: red;
+        border: none;
+        padding: 10px 15px;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+
+    /* <section class="model">
+  <div class="model-line"></div>
+  <div class="discription">
+      <h4>Success</h4>
+      <p>Lorem description goes here</p>
+      <p>3.36 PM</p>
+  </div>
+</section> */
+
+
+    .model {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-shadow: 4px 4px rgba(81, 80, 80, 0.116);
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-top: 2%;
+        margin-right: 10px;
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+
+    }
+
+    .model .inside-box {
+        display: flex;
+
+    }
+
+    .model .model-line {
+        background-color: rgb(72, 215, 72);
+        width: 4px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .model .discription {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        padding-left: 20px;
+    }
+}

@@ -145,9 +145,7 @@ button {
     gap: 15px;
 }
 
-.column-2{
-    grid-template-columns: 3fr 1fr;
-}
+
 .form-group .input-group-one{
     grid-template-columns: 1fr 2fr 2fr;
 
@@ -157,4 +155,27 @@ button {
     flex-direction: row;
     justify-content: center;
 }
+
+
+  /* Style the table itself */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+
+th,
+td {
+    border: 1px solid rgb(75, 75, 75);
+    padding: 8px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
 }
