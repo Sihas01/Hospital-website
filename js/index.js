@@ -164,10 +164,7 @@ function addCart(name) {
   } else {
 
 
-    //to show error msg 
-
-    const model = document.getElementById('model');
-    model.style.display = 'inline-block';
+    alert("add a prodcut")
 
     // Set a timeout to hide it after 100 milliseconds
     setTimeout(() => {
@@ -321,3 +318,20 @@ window.addEventListener('load', function () {
   }
 
 })
+
+
+window.addEventListener('load', function () {
+  if (window.location.pathname === "/pages/thankyou.html") {
+
+  // Get the current date
+  const currentDate = new Date();
+
+  // Add 7 days
+  currentDate.setDate(currentDate.getDate() + 7);
+
+  // Format the date in a readable format (e.g., YYYY-MM-DD)
+  const futureDate = currentDate.toISOString().split('T')[0]; // This gives the date in "YYYY-MM-DD"
+
+  // Display the new date
+  document.getElementById('dateResult').innerHTML = `${futureDate}`;
+}})

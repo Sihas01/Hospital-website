@@ -106,7 +106,7 @@
     
     
 
-        <section class="model" id="model">
+        <!-- <section class="model" id="model">
             <div class="inside-box">
                 <div class="model-line"></div>
             <div class="discription">
@@ -115,7 +115,7 @@
                 <p>3.36 PM</p>
             </div>
             </div>
-        </section>
+        </section> -->
     
         <section class="breadcrumb-navigation">
             <ul class="breadcrumb roboto-regular">
@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products p-4">
             <h2>Analgesics</h2>
             <div class="analgesics">
                 
@@ -232,7 +232,7 @@
             </div>
 
 
-            <h2>Antibiotics</h2>
+            <h2 class="p-4">Antibiotics</h2>
             <div class="antibiotics">
                 
               
@@ -252,7 +252,7 @@
             </div>
         </section>
 
-         <section class="products-tabel">
+         <section class="products-tabel p-4">
             <hr class="mt-5">
             <table>
                 <thead>
@@ -267,12 +267,19 @@
                <tbody id="tbody">
                 
                </tbody>
+
+               <!-- <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>$0</td>
+                </tr>
+               </tfoot> -->
               </table>
 
               <h3>Total : $ <span id="total-price"></span></h3>
               <button class='favouriteBtn' onclick='favouriteBtn();'><i class="bi bi-heart"></i></button>
               <button onclick="applyFavourite();" id="applyBtn">apply favorite</button>
-              <button onclick="placeOrder();">Place order</button>
+              <button onclick="placeOrder();" id="placeoder">Place order</button>
          </section>
         
 

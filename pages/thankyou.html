@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/thankyou.css">
+    <!---import icon from react-icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../icons/site.webmanifest">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <div class="header-strip roboto-regular">
+
+        <div class="header-strip-left">
+            <span><i class="bi bi-geo-alt-fill icon-one"></i> Colombo, Sri Lanka</span>
+            <span><i class="bi bi-telephone-fill icon-one"></i> (015) 4698874</span>
+        </div>
+
+        <div class="header-strip-right">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../resourses/logo.jpg" alt="logo" height="70">
+        </div>
+
+        <div class="nav-right roboto-regular">
+            <div class="list ">
+                <ul class="nav-list ">
+                    <li class="list-items"><a href="../index.html">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn list-items">Service
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./service-page.html">Our Services</a>
+                            <a href="./service-sub-page.html">Service One</a>
+
+                        </div>
+                    </div>
+
+                    <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
+                    <li class="list-items"><a href="#">Pharmarcy</a></li>
+                    <li class="list-items"><a href="./about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn" onclick="window.location.href='./reservation.html';">
+                Reservation
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger" onclick="openNav()">
+            &#9776;
+        </div>
+    </nav>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="../resourses/logo.jpg" alt="logo" height="70">
+        <div class="roboto-regular">
+            <div class="list">
+                <ul class="">
+                    <li class="list-items"><a href="../index.html">Home</a></li>
+                    <button class="dropdown-btn">Service
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="./service-page.html">Our Services</a>
+                        <a href="./service-sub-page.html">Service One</a>
+                    </div>
+                    <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
+                    <li class="list-items"><a href="#">Pharmarcy</a></li>
+                    <li class="list-items"><a href="./about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="btn-sidebar" onclick="window.location.href='./reservation.html';">
+                Reservation
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="text-center mt-5">THANK YOU !</h2>
+        <div class="center-div">
+            <p class="text-center mt-5 width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non velit repudiandae ea commodi voluptatem ipsum. Culpa, molestias? Optio fugiat officia fuga non nostrum cupiditate mollitia magni beatae illum minus. </p>
+        </div>
+
+        <button class="mt-5 button2" onclick="window.location.href = '../index.html'">Back to Home</button>
+
+
+        <h4 class="mt-5">ORDER DETAILS</h4>
+        <br>
+        <p>Delivery Date :  <span id="dateResult"></span></p>
+    </div>
+
+
+        <!-----footer---->
+        <footer class="mt-5">
+            <div class="footer-container lato-regular">
+                <div class="footer-left">
+                    <img src="../resourses/logo.jpg" alt="Logo" class="footer-logo">
+                    <p>Some text goes here describing the company or providing information.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About ZenithCare</a></li>
+                            <li><a href="#">Our Ecosystem</a></li>
+                            <li><a href="#">Community Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Facilitys</a></li>
+                            <li><a href="#">Pharmacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Sri Lanka</a></li>
+                            <li><a href="#">zenithcare@gmail.com</a></li>
+                            <li><a href="#">+12345678</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+            <div class="footer-bottom lato-regular">
+                ZenithCare &copy; 2024
+            </div>
+        </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
