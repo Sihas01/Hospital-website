@@ -272,7 +272,7 @@ function placeOrder() {
   orderItems = checkAddedItems();
 
   if (orderItems.length > 0) {
-    window.location.href = "/pharmacy.html";
+    window.location.href = "pharmacy.html";
     sessionStorage.setItem("ordeditems", JSON.stringify(orderItems));
 
   } else {
