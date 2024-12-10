@@ -281,7 +281,7 @@ function placeOrder() {
 }
 
 window.addEventListener('load', function () {
-  if (window.location.pathname === "/pages/pharmacy.html") {
+  if (window.location.pathname.includes("/pages/pharmacy.html")){
 
     let tabel = document.getElementById('tbody2');
 
