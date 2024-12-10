@@ -272,7 +272,7 @@ function placeOrder() {
   orderItems = checkAddedItems();
 
   if (orderItems.length > 0) {
-    window.location.href = "./pages/pharmacy.html";
+    window.location.href = "pages/pharmacy.html";
     sessionStorage.setItem("ordeditems", JSON.stringify(orderItems));
 
   } else {
@@ -281,7 +281,7 @@ function placeOrder() {
 }
 
 window.addEventListener('load', function () {
-  if (window.location.pathname === "./pages/pharmacy.html") {
+  if (window.location.pathname === "pages/pharmacy.html") {
 
     let tabel = document.getElementById('tbody2');
 
@@ -321,7 +321,7 @@ window.addEventListener('load', function () {
 
 
 window.addEventListener('load', function () {
-  if (window.location.pathname === "./pages/thankyou.html") {
+  if (window.location.pathname === "pages/thankyou.html") {
 
   // Get the current date
   const currentDate = new Date();
