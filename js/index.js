@@ -321,7 +321,7 @@ window.addEventListener('load', function () {
 
 
 window.addEventListener('load', function () {
-  if (window.location.pathname === "/pages/thankyou.html") {
+  if (window.location.pathname.includes("/pages/thankyou.html")) {
 
   // Get the current date
   const currentDate = new Date();
