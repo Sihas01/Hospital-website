@@ -127,6 +127,27 @@ button {
     gap: 15px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+
+th,
+td {
+    border: 1px solid rgb(75, 75, 75);
+    padding: 8px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+
 @media (min-width: 992px) {
 
 
@@ -154,28 +175,6 @@ button {
 .form-group-inline {
     flex-direction: row;
     justify-content: center;
-}
-
-
-  /* Style the table itself */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-
-th,
-td {
-    border: 1px solid rgb(156, 156, 156);
-    padding: 8px;
-    text-align: left;
-}
-
-
-th {
-    background-color: #f8f8f8;
-    font-weight: bold;
 }
 
 }
