@@ -7,7 +7,7 @@
     <title>Hospital</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/pharmacy.css">
-    <!---import icon from react-icons-->
+    <!--import icon from react-icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
@@ -44,7 +44,7 @@
 
 
 
-    <!------navigation bar-->
+    <!--navigation bar-->
     <nav>
         <div class="nav-left">
             <img src="../resourses/logo.jpg" alt="logo" height="70">
@@ -54,16 +54,18 @@
             <div class="list ">
                 <ul class="nav-list ">
                     <li class="list-items"><a href="../index.html">Home</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn list-items">Service
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="./service-page.html">Our Services</a>
-                            <a href="./service-sub-page.html">Service One</a>
-
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn list-items">Service
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="./service-page.html">Our Services</a>
+                                <a href="./service-sub-page.html">Service One</a>
+    
+                            </div>
                         </div>
-                    </div>
+                    </li>
 
                     <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
                     <li class="list-items"><a href="#">Pharmarcy</a></li>
@@ -88,13 +90,15 @@
             <div class="list">
                 <ul class="">
                     <li class="list-items"><a href="../index.html">Home</a></li>
-                    <button class="dropdown-btn">Service
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="./service-page.html">Our Services</a>
-                        <a href="./service-sub-page.html">Service One</a>
-                    </div>
+                    <li>
+                        <button class="dropdown-btn">Service
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="./service-page.html">Our Services</a>
+                            <a href="./service-sub-page.html">Service One</a>
+                        </div>
+                    </li>
                     <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
                     <li class="list-items"><a href="#">Pharmarcy</a></li>
                     <li class="list-items"><a href="./about-us.html">About Us</a></li>
@@ -111,13 +115,13 @@
 
 
 
-    <section class="breadcrumb-navigation">
+    <div class="breadcrumb-navigation">
         <ul class="breadcrumb roboto-regular">
             <li><a href="../index.html">Home</a></li>
             <li>Pharmacy</li>
         </ul>
 
-    </section>
+    </div>
 
 
     <section class="pharmacy-intro lato-regular">
@@ -135,7 +139,7 @@
 
 
 
-    <!-----pharmacy section------->
+    <!--pharmacy section-->
     <div class="form-container">
         <div class="inside">
         <div class="details">
@@ -168,7 +172,9 @@
                 <div class="column-2">
                     <div>
                         <select name="#" id="#" required>
-                            <option value="#">Why you need this</option>
+                            <option value="">Why you need this</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
                         </select>
 
                         <label for="text2">Purpose</label>
@@ -185,7 +191,9 @@
                     <div>
 
                         <select name="name" id="name" required>
-                            <option value="#">Mr.</option>
+                            <option value="">Mr.</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
 
                         </select>
                         <label for="name">ame</label>
@@ -193,13 +201,13 @@
 
                     <div>
                         <input type="text" id="text1" name="first-name" required>
-                        <label for="first-name">first name</label>
+                        <label for="text1">first name</label>
 
                     </div>
 
                     <div>
-                        <input type="text" id="text1" name="last-name" required>
-                        <label for="last-name">second name</label>
+                        <input type="text" id="text2" name="last-name" required>
+                        <label for="text2">second name</label>
                     </div>
 
                 </div>
@@ -210,28 +218,28 @@
             <label class="main-label">Home Address</label>
             <div class="form-group">
 
-                <input type="text" id="text2" name="text2" required/>
-                <label for="text2">Address</label>
+                <input type="text" id="text3" name="text3" required>
+                <label for="text3">Address</label>
             </div>
 
             <div class="form-group">
 
-                <input type="text" id="text2" name="text2"/>
-                <label for="text2">Address 2</label>
+                <input type="text" id="text4" name="text4">
+                <label for="text4">Address 2</label>
             </div>
 
 
             <div class="column">
                 <div class="form-group">
 
-                    <input type="text" id="text2" name="text2" required />
-                    <label for="text2">Town</label>
+                    <input type="text" id="text5" name="text5" required >
+                    <label for="text5">Town</label>
                 </div>
 
                 <div class="form-group">
 
-                    <input type="text" id="text2" name="text2"  required/>
-                    <label for="text2">City</label>
+                    <input type="text" id="text6" name="text6"  required>
+                    <label for="text6">City</label>
                 </div>
             </div>
 
@@ -241,7 +249,7 @@
             <div class="column">
                 <div class="form-group">
 
-                    <input type="text" id="text2" name="text2" required/>
+                    <input type="text" id="text7" name="text7" required>
 
                 </div>
 
@@ -308,7 +316,7 @@
 
 
 
-    <!-----footer---->
+    <!--footer-->
     <footer>
         <div class="footer-container lato-regular">
             <div class="footer-left">
@@ -358,7 +366,7 @@
         </div>
     </footer>
 
-    <!-------import javascript-------->
+    <!--import javascript-->
     <script src="../js/index.js"></script>
 
 </body>
