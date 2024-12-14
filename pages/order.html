@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/order.css">
 
-        <!---import icon from react-icons-->
+        <!--import icon from react-icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
@@ -39,7 +39,7 @@
     
     
     
-        <!------navigation bar-->
+        <!--navigation bar-->
         <nav>
             <div class="nav-left">
                 <img src="../resourses/logo.jpg" alt="logo" height="70">
@@ -49,16 +49,18 @@
                 <div class="list ">
                     <ul class="nav-list ">
                         <li class="list-items"><a href="../index.html">Home</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn list-items">Service
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="./service-page.html">Our Services</a>
-                                <a href="./service-sub-page.html">Service One</a>
-    
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn list-items">Service
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="./service-page.html">Our Services</a>
+                                    <a href="./service-sub-page.html">Service One</a>
+        
+                                </div>
                             </div>
-                        </div>
+                        </li>
     
                         <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
                         <li class="list-items"><a href="#">Pharmarcy</a></li>
@@ -83,13 +85,15 @@
                 <div class="list">
                     <ul class="">
                         <li class="list-items"><a href="../index.html">Home</a></li>
-                        <button class="dropdown-btn">Service
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-container">
-                            <a href="./service-page.html">Our Services</a>
-                            <a href="./service-sub-page.html">Service One</a>
-                        </div>
+                        <li>
+                            <button class="dropdown-btn">Service
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
+                                <a href="./service-page.html">Our Services</a>
+                                <a href="./service-sub-page.html">Service One</a>
+                            </div>
+                        </li>
                         <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
                         <li class="list-items"><a href="#">Pharmarcy</a></li>
                         <li class="list-items"><a href="./about-us.html">About Us</a></li>
@@ -117,21 +121,21 @@
             </div>
         </section> -->
     
-        <section class="breadcrumb-navigation">
+        <div class="breadcrumb-navigation">
             <ul class="breadcrumb roboto-regular">
                 <li><a href="../index.html">Home</a></li>
                 <li>Order</li>
             </ul>
     
-        </section>
+        </div>
     
     
-        <section class="pharmacy-intro lato-regular">
+        <div class="pharmacy-intro lato-regular">
           
             <div class="pharmacy-image">
     
             </div>
-        </section>
+        </div>
 
         <section class="products p-4">
             <h2>Analgesics</h2>
@@ -139,13 +143,13 @@
                 
               
                     <div class="item">
-                        <img src="../resourses/acetaminophen-suppositories.webp" alt="item1" class="product-image"/>
+                        <img src="../resourses/acetaminophen-suppositories.webp" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Acetaminophen</h4>
                             <br>
                             <h4>Price : 500$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="acetaminophen" />
+                            <input type="number" placeholder="0" min="0" max="50" id="acetaminophen" >
                             <button class="addtocart" onclick="addCart('acetaminophen')">
                                 Add  
                             </button>
@@ -153,13 +157,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/Aspirin.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses/Aspirin.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Aspirin</h4>
                             <br>
                             <h4>Price : 300$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="aspirin"/>
+                            <input type="number" placeholder="0" min="0" max="50" id="aspirin">
                             <button class="addtocart" onclick="addCart('aspirin')">
                                 Add  
                             </button>
@@ -168,13 +172,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/gabapentin.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses/gabapentin.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Gabapentin</h4>
                             <br>
                             <h4>Price : 400$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="gabapentin"/>
+                            <input type="number" placeholder="0" min="0" max="50" id="gabapentin">
                             <button class="addtocart" onclick="addCart('gabapentin')">
                                 Add  
                             </button>
@@ -183,13 +187,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/Lidocaine.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses/Lidocaine.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Lidocaine</h4>
                             <br>
                             <h4>Price : 200$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="lidocaine"/>
+                            <input type="number" placeholder="0" min="0" max="50" id="lidocaine">
                             <button class="addtocart" onclick="addCart('lidocaine')">
                                 Add  
                             </button>
@@ -197,13 +201,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/opioids.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses/opioids.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Opioids</h4>
                             <br>
                             <h4>Price : 600$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="opioids"/>
+                            <input type="number" placeholder="0" min="0" max="50" id="opioids">
                             <button class="addtocart" onclick="addCart('opioids')">
                                 Add  
                             </button>
@@ -212,13 +216,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses//tramadol.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses//tramadol.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Tramadol</h4>
                             <br>
                             <h4>Price : 400$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="tramadol" />
+                            <input type="number" placeholder="0" min="0" max="50" id="tramadol" >
                             <button class="addtocart" onclick="addCart('tramadol')">
                                 Add  
                             </button>
@@ -237,13 +241,13 @@
                 
               
                     <div class="item">
-                        <img src="../resourses//products/amoxicillin.jpg" alt="item1" class="product-image"/>
+                        <img src="../resourses//products/amoxicillin.jpg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Amoxicillin</h4>
                             <br>
                             <h4>Price : 25$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="amoxicillin" />
+                            <input type="number" placeholder="0" min="0" max="50" id="amoxicillin" >
                             <button class="addtocart" onclick="addCart('amoxicillin')">
                                 Add  
                             </button>
@@ -251,13 +255,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/azithromycin.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/azithromycin.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Azithromycin</h4>
                             <br>
                             <h4>Price : 30$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="azithromycin" />
+                            <input type="number" placeholder="0" min="0" max="50" id="azithromycin" >
                             <button class="addtocart" onclick="addCart('azithromycin')">
                                 Add  
                             </button>
@@ -266,13 +270,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/ciprofloxacin.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/ciprofloxacin.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Ciprofloxacin</h4>
                             <br>
                             <h4>Price : 41$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="ciprofloxacin" />
+                            <input type="number" placeholder="0" min="0" max="50" id="ciprofloxacin" >
                             <button class="addtocart" onclick="addCart('ciprofloxacin')">
                                 Add  
                             </button>
@@ -280,13 +284,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/doxycycline.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/doxycycline.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Doxycycline</h4>
                             <br>
                             <h4>Price : 21$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="doxycycline" />
+                            <input type="number" placeholder="0" min="0" max="50" id="doxycycline" >
                             <button class="addtocart" onclick="addCart('doxycycline')">
                                 Add  
                             </button>
@@ -295,13 +299,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/metronidazole.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/metronidazole.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Metronidazole</h4>
                             <br>
                             <h4>Price : 20$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="metronidazole" />
+                            <input type="number" placeholder="0" min="0" max="50" id="metronidazole" >
                             <button class="addtocart" onclick="addCart('metronidazole')">
                                 Add  
                             </button>
@@ -309,13 +313,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/cephalexin.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/cephalexin.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Cephalexin</h4>
                             <br>
                             <h4>Price : 28$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="cephalexin" />
+                            <input type="number" placeholder="0" min="0" max="50" id="cephalexin" >
                             <button class="addtocart" onclick="addCart('cephalexin')">
                                 Add  
                             </button>
@@ -330,13 +334,13 @@
                 
               
                     <div class="item">
-                        <img src="../resourses/products/sertraline.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/sertraline.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Sertraline</h4>
                             <br>
                             <h4>Price : 60$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="sertraline" />
+                            <input type="number" placeholder="0" min="0" max="50" id="sertraline">
                             <button class="addtocart" onclick="addCart('sertraline')">
                                 Add  
                             </button>
@@ -345,13 +349,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/fluoxetine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/fluoxetine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Fluoxetine</h4>
                             <br>
                             <h4>Price : 50$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="fluoxetine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="fluoxetine" >
                             <button class="addtocart" onclick="addCart('fluoxetine')">
                                 Add  
                             </button>
@@ -360,13 +364,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/paroxetine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/paroxetine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Paroxetine</h4>
                             <br>
                             <h4>Price : 65$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="paroxetine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="paroxetine" >
                             <button class="addtocart" onclick="addCart('paroxetine')">
                                 Add  
                             </button>
@@ -374,13 +378,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/escitalopram.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/escitalopram.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Escitalopram</h4>
                             <br>
                             <h4>Price : 55$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="escitalopram" />
+                            <input type="number" placeholder="0" min="0" max="50" id="escitalopram" >
                             <button class="addtocart" onclick="addCart('escitalopram')">
                                 Add  
                             </button>
@@ -388,13 +392,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/venlafaxine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/venlafaxine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Venlafaxine</h4>
                             <br>
                             <h4>Price : 70$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="venlafaxine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="venlafaxine" >
                             <button class="addtocart" onclick="addCart('venlafaxine')">
                                 Add  
                             </button>
@@ -402,13 +406,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/duloxetine.png" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/duloxetine.png" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Duloxetine</h4>
                             <br>
                             <h4>Price : 75$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="duloxetine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="duloxetine" >
                             <button class="addtocart" onclick="addCart('duloxetine')">
                                 Add  
                             </button>
@@ -424,13 +428,13 @@
                 
               
                     <div class="item">
-                        <img src="../resourses/products/diphenhydramine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/diphenhydramine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Diphenhydramine</h4>
                             <br>
                             <h4>Price : 10$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="diphenhydramine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="diphenhydramine" >
                             <button class="addtocart" onclick="addCart('diphenhydramine')">
                                 Add  
                             </button>
@@ -439,13 +443,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/loratadine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/loratadine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Loratadine</h4>
                             <br>
                             <h4>Price : 15$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="loratadine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="loratadine" >
                             <button class="addtocart" onclick="addCart('loratadine')">
                                 Add  
                             </button>
@@ -454,13 +458,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/cetirizine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/cetirizine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Cetirizine</h4>
                             <br>
                             <h4>Price : 20$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="cetirizine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="cetirizine" >
                             <button class="addtocart" onclick="addCart('cetirizine')">
                                 Add  
                             </button>
@@ -468,13 +472,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/fexofenadine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/fexofenadine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Fexofenadine</h4>
                             <br>
                             <h4>Price : 25$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="fexofenadine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="fexofenadine" >
                             <button class="addtocart" onclick="addCart('fexofenadine')">
                                 Add  
                             </button>
@@ -490,13 +494,13 @@
                 
               
                     <div class="item">
-                        <img src="../resourses/products/lisinopril.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/lisinopril.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Lisinopril</h4>
                             <br>
                             <h4>Price : 40$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="lisinopril" />
+                            <input type="number" placeholder="0" min="0" max="50" id="lisinopril" >
                             <button class="addtocart" onclick="addCart('lisinopril')">
                                 Add  
                             </button>
@@ -505,13 +509,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/amlodipine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/amlodipine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Amlodipine</h4>
                             <br>
                             <h4>Price : 45$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="amlodipine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="amlodipine" >
                             <button class="addtocart" onclick="addCart('amlodipine')">
                                 Add  
                             </button>
@@ -520,13 +524,13 @@
 
 
                     <div class="item">
-                        <img src="../resourses/products/losartan.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/losartan.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Losartan</h4>
                             <br>
                             <h4>Price : 50$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="losartan" />
+                            <input type="number" placeholder="0" min="0" max="50" id="losartan" >
                             <button class="addtocart" onclick="addCart('losartan')">
                                 Add  
                             </button>
@@ -534,13 +538,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/metoprolol.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/metoprolol.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Metoprolol</h4>
                             <br>
                             <h4>Price : 55$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="metoprolol" />
+                            <input type="number" placeholder="0" min="0" max="50" id="metoprolol" >
                             <button class="addtocart" onclick="addCart('metoprolol')">
                                 Add  
                             </button>
@@ -548,13 +552,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/clonidine.jpeg" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/clonidine.jpeg" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Clonidine</h4>
                             <br>
                             <h4>Price : 30$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="clonidine" />
+                            <input type="number" placeholder="0" min="0" max="50" id="clonidine" >
                             <button class="addtocart" onclick="addCart('clonidine')">
                                 Add  
                             </button>
@@ -562,13 +566,13 @@
                     </div>
 
                     <div class="item">
-                        <img src="../resourses/products/hydrochlorothiazide.png" alt="item1" class="product-image"/>
+                        <img src="../resourses/products/hydrochlorothiazide.png" alt="item1" class="product-image">
                         <div class="disctiption">
                             <h4>Name : Hydrochlorothiazide</h4>
                             <br>
                             <h4>Price : 35$</h4>
                             <br>
-                            <input type="number" placeholder="0" min="0" max="50" id="hydrochlorothiazide" />
+                            <input type="number" placeholder="0" min="0" max="50" id="hydrochlorothiazide" >
                             <button class="addtocart" onclick="addCart('hydrochlorothiazide')">
                                 Add  
                             </button>
@@ -645,7 +649,7 @@
     
     
     
-        <!-----footer---->
+        <!--footer-->
         <footer>
             <div class="footer-container lato-regular">
                 <div class="footer-left">
@@ -695,7 +699,7 @@
             </div>
         </footer>
     
-        <!-------import javascript-------->
+        <!--import javascript-->
         <script src="../js/index.js"></script>
 </body>
 </html>
