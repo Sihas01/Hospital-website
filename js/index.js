@@ -126,7 +126,7 @@ function updateTotal() {
 }
 
 //update total real time
-setInterval(updateTotal, 500);
+// setInterval(updateTotal, 500);
 
 //add to cart function
 function addCart(name) {
@@ -188,13 +188,11 @@ function addCart(name) {
 
     //set input box value to default
     document.getElementById(name).value = "";
+    updateTotal()
   } else {
     alert("add a prodcut");
 
     // Set a timeout to hide it after 100 milliseconds
-    setTimeout(() => {
-      // model.style.display = 'none';
-    }, 1000); // Hide after 100ms
   }
 }
 
@@ -205,6 +203,7 @@ function deleteRow(button) {
   let deleteProductPrice = row.cells[2].textContent;
   total -= parseInt(deleteProductPrice);
   row.remove();
+  updateTotal()
 }
 
 function checkAddedItems() {
@@ -216,10 +215,10 @@ function checkAddedItems() {
 
   productRows.forEach((cell) => {
     const productName = cell.querySelector(".product-name").textContent;
-    const quantity = cell.querySelector(".quantity").textContent;
-    const price = cell.querySelector(".price").textContent;
+    const quantity = parseInt(cell.querySelector(".quantity").textContent);
+    const price = parseInt(cell.querySelector(".price").textContent);
 
-    if (productName && quantity) {
+    if (productName && quantity && price) {
       orderItems.push({ name: productName, quantity: quantity, price: price });
     }
   });
@@ -228,6 +227,7 @@ function checkAddedItems() {
 }
 
 function favouriteBtn() {
+  
   orderItems = checkAddedItems();
 
   if (orderItems.length > 0) {
@@ -245,7 +245,7 @@ function applyFavourite() {
   if (favouriteOrder == null) {
     alert("There's no favourite Order !!");
   } else {
-    document.getElementById("tbody").innerHTML = "";
+    // document.getElementById("tbody").innerHTML = "";
     let tabel = document.getElementById("tbody");
 
     let price;
@@ -262,7 +262,7 @@ function applyFavourite() {
       var cell2 = row.insertCell(1);
       cell2.classList.add("quantity");
       var cell3 = row.insertCell(2);
-      cell2.classList.add("price");
+      cell3.classList.add("price");
       var cell4 = row.insertCell(3);
 
       //assign values to cells
@@ -270,12 +270,14 @@ function applyFavourite() {
       cell3.textContent = item.price;
       cell4.innerHTML =
         "<button class='deleteBtn' onclick='deleteRow(this);'>Delete</button>";
+        total += price;
     });
 
-    total += price;
+    
 
     let applyBtn = document.getElementById("applyBtn");
     applyBtn.disabled = true;
+    updateTotal()
   }
 }
 
@@ -295,7 +297,6 @@ window.addEventListener("load", function () {
     let tabel = document.getElementById("tbody2");
 
     const orderItems = JSON.parse(sessionStorage.getItem("ordeditems"));
-
     orderItems.forEach((item) => {
       //new item add to table
       var row = tabel.insertRow(tabel.rows.length);
