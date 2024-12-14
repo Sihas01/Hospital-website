@@ -1,314 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Hospital</title>
-    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common.css" >
     <link rel="stylesheet" href="../css/about-us.css">
-    <!---import icon from react-icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--import icon from react-icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    >
+    <link rel="manifest" href="../icons/site.webmanifest" >
+    <link
+      rel="mask-icon"
+      href="../icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    >
+    <meta name="msapplication-TileColor" content="#da532c" >
+    <meta name="theme-color" content="#ffffff" >
+  </head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-    <link rel="manifest" href="../icons/site.webmanifest">
-    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-
-
+  <body>
     <!--Header strip start-->
     <div class="header-strip roboto-regular">
+      <div class="header-strip-left">
+        <span
+          ><i class="bi bi-geo-alt-fill icon-one"></i> Colombo, Sri Lanka</span
+        >
+        <span><i class="bi bi-telephone-fill icon-one"></i> (015) 4698874</span>
+      </div>
 
-        <div class="header-strip-left">
-            <span><i class="bi bi-geo-alt-fill icon-one"></i> Colombo, Sri Lanka</span>
-            <span><i class="bi bi-telephone-fill icon-one"></i> (015) 4698874</span>
-        </div>
-
-        <div class="header-strip-right">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-google"></i></a>
-        </div>
-
+      <div class="header-strip-right">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-google"></i></a>
+      </div>
     </div>
 
-
-
-    <!------navigation bar-->
+    <!--navigation bar-->
     <nav>
-        <div class="nav-left">
-            <img src="../resourses/logo.jpg" alt="logo" height="70">
-        </div>
+      <div class="nav-left">
+        <img src="../resourses/logo.jpg" alt="logo" height="70" >
+      </div>
 
-        <div class="nav-right roboto-regular">
-            <div class="list ">
-                <ul class="nav-list ">
-                    <li class="list-items"><a href="../index.html">Home</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn list-items">Service
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="./service-page.html">Our Services</a>
-                            <a href="./service-sub-page.html">Service One</a>
-                           
-                        </div>
-                    </div>
+      <div class="nav-right roboto-regular">
+        <div class="list">
+          <ul class="nav-list">
+            <li class="list-items"><a href="../index.html">Home</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn list-items">
+                  Service
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="./service-page.html">Our Services</a>
+                  <a href="./service-sub-page.html">Service One</a>
+                </div>
+              </div>
+            </li>
 
-                    <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
-                    <li class="list-items"><a href="./pharmacy.html">Pharmarcy</a></li>
-                    <li class="list-items"><a href="#">About Us</a></li>
-                </ul>
-            </div>
-            <div class="nav-btn" onclick="window.location.href='./reservation.html';">
-                Reservation
-            </div>
+            <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
+            <li class="list-items"><a href="./pharmacy.html">Pharmarcy</a></li>
+            <li class="list-items"><a href="#">About Us</a></li>
+          </ul>
         </div>
+        <div
+          class="nav-btn"
+          onclick="window.location.href='./reservation.html';"
+        >
+          Reservation
+        </div>
+      </div>
 
-        <div class="hamburger" id="hamburger" onclick="openNav()">
-            &#9776;
-        </div>
+      <div class="hamburger" id="hamburger" onclick="openNav()">&#9776;</div>
     </nav>
 
-
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="../resourses/logo.jpg" alt="logo" height="70">
-        <div class="roboto-regular">
-            <div class="list">
-                <ul class="">
-                    <li class="list-items"><a href="../index.html">Home</a></li>
-                    <button class="dropdown-btn">Service
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="./service-page.html">Our Services</a>
-                            <a href="./service-sub-page.html">Service One</a>
-                    </div>
-                    <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
-                    <li class="list-items"><a href="./pharmacy.html">Pharmarcy</a></li>
-                    <li class="list-items"><a href="#">About Us</a></li>
-                </ul>
-            </div>
-            <div class="btn-sidebar" onclick="window.location.href='./reservation.html';">
-                Reservation
-            </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <img src="../resourses/logo.jpg" alt="logo" height="70" >
+      <div class="roboto-regular">
+        <div class="list">
+          <ul class="">
+            <li class="list-items"><a href="../index.html">Home</a></li>
+            <li>
+              <button class="dropdown-btn">
+                Service
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="./service-page.html">Our Services</a>
+                <a href="./service-sub-page.html">Service One</a>
+              </div>
+            </li>
+            <li class="list-items"><a href="./our-doctors.html">Doctors</a></li>
+            <li class="list-items"><a href="./pharmacy.html">Pharmarcy</a></li>
+            <li class="list-items"><a href="#">About Us</a></li>
+          </ul>
         </div>
+        <div
+          class="btn-sidebar"
+          onclick="window.location.href='./reservation.html';"
+        >
+          Reservation
+        </div>
+      </div>
     </div>
 
+    <button onclick="toTop()" id="top-btn" title="Go to top">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </button>
 
-    <button onclick="toTop()" id="top-btn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
+    <div class="breadcrumb-navigation">
+      <ul class="breadcrumb roboto-regular">
+        <li><a href="../index.html">Home</a></li>
+        <li>About Us</li>
+      </ul>
+    </div>
 
-
-
-    <section class="breadcrumb-navigation">
-        <ul class="breadcrumb roboto-regular">
-            <li><a href="../index.html">Home</a></li>
-            <li>About Us</li>
-        </ul>
-
-    </section>
-
-
-    <!----about intro------>
+    <!--about intro-->
 
     <section class="about-us-sec-1 lato-regular">
-        <div class="details">
-            <h2 class="lato-black">About Us</h2>
-            <div class="pragraphs-group">
-                <p>Welcome to ZenithCare, where we blend compassionate care with advanced medical technology. Our dedicated team of healthcare professionals is committed to delivering exceptional, patient-centered care, addressing both routine and complex health needs with expertise and empathy.</p>
-                <p>At Your ZenithCare, we prioritize innovation and community well-being. By leveraging the latest medical advancements and engaging in outreach initiatives, we strive to make a positive impact on every patient’s journey to better health. Learn more about our mission, values, and the team dedicated to your care.</p>
-                
-            </div>
+      <div class="details">
+        <h2 class="lato-black">About Us</h2>
+        <div class="pragraphs-group">
+          <p>
+            Welcome to ZenithCare, where we blend compassionate care with
+            advanced medical technology. Our dedicated team of healthcare
+            professionals is committed to delivering exceptional,
+            patient-centered care, addressing both routine and complex health
+            needs with expertise and empathy.
+          </p>
+          <p>
+            At Your ZenithCare, we prioritize innovation and community
+            well-being. By leveraging the latest medical advancements and
+            engaging in outreach initiatives, we strive to make a positive
+            impact on every patient’s journey to better health. Learn more about
+            our mission, values, and the team dedicated to your care.
+          </p>
         </div>
-        <div class="image"></div>
+      </div>
+      <div class="image"></div>
     </section>
 
-
-    <!-------our branchers section------->
+    <!--our branchers section-->
 
     <section class="branches-section lato-regular">
-        <h2 class="lato-black">Our Branchers</h2>
-        <div class="branches-group">
-            
+      <h2 class="lato-black">Our Branchers</h2>
+      <div class="branches-group">
+        <div class="branch-main">
+          <div class="details">
+            <h4 class="lato-bold">Main Branch</h4>
+            <p>
+              The Main branch offers top-tier medical care with a focus on
+              personalized attention. Our advanced facilities and dedicated
+              staff are committed to providing exceptional healthcare services
+              tailored to meet the needs of our community.
+            </p>
+          </div>
 
-            <div class="branch-main">
-                <div class="details">
-                    <h4 class="lato-bold">Main Branch</h4>
-                    <p>The Main branch offers top-tier medical care with a focus on personalized attention. Our advanced facilities and dedicated staff are committed to providing exceptional healthcare services tailored to meet the needs of our community.</p>
-                </div>
-
-                <div class="media">
-                    <div class="image-main"></div>
-                    <div class="map-main">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+          <div class="media">
+            <div class="image-main"></div>
+            <div class="map-main">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-
-
-            <div class="branch-kandy">
-                <div class="details">
-                    <h4 class="lato-bold">Kandy Branch</h4>
-                    <p>At Kandy Branch, compassionate care meets cutting-edge medical expertise. Our skilled professionals provide a comprehensive range of services in a welcoming environment, ensuring the highest standard of care for every patient.</p>
-                </div>
-
-                <div class="media">
-                    <div class="image-main"></div>
-                    <div class="map-main">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="branch-galle">
-                <div class="details">
-                    <h4 class="lato-bold">Galle Branch</h4>
-                    <p>The Galle Branch facility combines innovation with personalized medical care. Our expert team delivers comprehensive services with a focus on individualized treatment plans, aiming to make a positive impact on your health and well-being.</p>
-                </div>
-
-                <div class="media">
-                    <div class="image-main"></div>
-                    <div class="map-main">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-            
-
+          </div>
         </div>
-        
+
+        <div class="branch-kandy">
+          <div class="details">
+            <h4 class="lato-bold">Kandy Branch</h4>
+            <p>
+              At Kandy Branch, compassionate care meets cutting-edge medical
+              expertise. Our skilled professionals provide a comprehensive range
+              of services in a welcoming environment, ensuring the highest
+              standard of care for every patient.
+            </p>
+          </div>
+
+          <div class="media">
+            <div class="image-main"></div>
+            <div class="map-main">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-galle">
+          <div class="details">
+            <h4 class="lato-bold">Galle Branch</h4>
+            <p>
+              The Galle Branch facility combines innovation with personalized
+              medical care. Our expert team delivers comprehensive services with
+              a focus on individualized treatment plans, aiming to make a
+              positive impact on your health and well-being.
+            </p>
+          </div>
+
+          <div class="media">
+            <div class="image-main"></div>
+            <div class="map-main">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75160150415!2d79.6923048972656!3d6.932549700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1722791200475!5m2!1sen!2slk"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--about us suummary table-->
 
-    <!---about us suummary table---->
+    <div class="table lato-bold">
+      <table class="lato-regular">
+        <tr>
+          <th>Branch</th>
+          <th>Location</th>
+          <th>Contact</th>
+        </tr>
 
-    <section class="table lato-bold">
-            <table class="lato-regular">
-                <tr>
-                    <th>Branch</th>
-                    <th>Location</th>
-                    <th>Contact</th>
-                </tr>
+        <tr>
+          <td>Main Branch</td>
+          <td>Colombo</td>
+          <td>0752025480</td>
+        </tr>
 
-                <tr>
-                    <td>Main Branch</td>
-                    <td>Colombo</td>
-                    <td>0752025480</td>
-                </tr>
+        <tr>
+          <td>Kandy Branch</td>
+          <td>Kandy Town</td>
+          <td>0752025480</td>
+        </tr>
 
-                <tr>
-                    <td>Kandy Branch</td>
-                    <td>Kandy Town</td>
-                    <td>0752025480</td>
-                </tr>
+        <tr>
+          <td>Galle Branch</td>
+          <td>Fort</td>
+          <td>0752025480</td>
+        </tr>
+        <tr class="table-footer">
+          <td colspan="3">Summary Table</td>
+        </tr>
+      </table>
+    </div>
 
-                <tr>
-                    <td>Galle Branch</td>
-                    <td>Fort</td>
-                    <td>0752025480</td>
-                </tr>
-                <tr class="table-footer">
-                    <td colspan="3">Summary Table</td>
-                </tr>
-            </table>
-    </section>
-
-
-    <!------section seven-------->
+    <!--section seven-->
 
     <section class="section-seven">
-        <div class="left">
-            <div class="left-col"></div>
+      <div class="left">
+        <div class="left-col"></div>
+      </div>
+
+      <div class="right">
+        <div class="right-col">
+          <div class="text-box">
+            <h1 class="lato-bold text2">There is any emergency ?</h1>
+            <h4 class="lato-black text3">+ 0401253568</h4>
+            <p class="lato-regular">
+              In emergencies, immediate, expert care is essential. Our team
+              delivers fast, effective treatment with advanced technology and
+              compassionate support.
+            </p>
+          </div>
+
+          <div class="button-box">
+            <div class="btn1 lato-regular">Call Now</div>
+          </div>
         </div>
-
-
-        <div class="right">
-            <div class="right-col">
-                <div class="text-box">
-                    <h1 class="lato-bold text2">There is any emergency ?</h1>
-                    <h4 class="lato-black text3">+ 0401253568</h4>
-                    <p class="lato-regular">In emergencies, immediate, expert care is essential. Our team delivers fast, effective treatment with advanced technology and compassionate support. </p>
-                </div>
-
-                <div class="button-box">
-                    <div class="btn1 lato-regular">
-                        Call Now
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
+      </div>
     </section>
 
-
-
-
-
-    <!-----footer---->
+    <!--footer-->
     <footer>
-        <div class="footer-container lato-regular">
-            <div class="footer-left">
-                <img src="../resourses/logo.jpg" alt="Logo" class="footer-logo">
-                <p>ZenithCare center is a hospital with best services</p>
-            </div>
-            <div class="footer-right">
-                <div class="footer-column">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">About ZenithCare</a></li>
-                        <li><a href="#">Our Ecosystem</a></li>
-                        <li><a href="#">Community Impact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Help</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Doctors</a></li>
-                        <li><a href="#">Facilitys</a></li>
-                        <li><a href="#">Pharmacy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="#">Sri Lanka</a></li>
-                        <li><a href="#">zenithcare@gmail.com</a></li>
-                        <li><a href="#">+12345678</a></li>
-                    </ul>
-                </div>
-            </div>
-
-
+      <div class="footer-container lato-regular">
+        <div class="footer-left">
+          <img src="../resourses/logo.jpg" alt="Logo" class="footer-logo" >
+          <p>ZenithCare center is a hospital with best services</p>
         </div>
-
-        <div class="footer-bottom lato-regular">
-            ZenithCare &copy; 2024
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">About ZenithCare</a></li>
+              <li><a href="#">Our Ecosystem</a></li>
+              <li><a href="#">Community Impact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Facilitys</a></li>
+              <li><a href="#">Pharmacy</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Sri Lanka</a></li>
+              <li><a href="#">zenithcare@gmail.com</a></li>
+              <li><a href="#">+12345678</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-bottom lato-regular">ZenithCare &copy; 2024</div>
     </footer>
 
-    <!-------import javascript-------->
+    <!--import javascript-->
     <script src="../js/index.js"></script>
-
-</body>
-
+  </body>
 </html>
