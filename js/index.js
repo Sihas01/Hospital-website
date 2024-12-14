@@ -1,23 +1,27 @@
-//service worker 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/Hospital-website/sw.js')
+//service worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/Hospital-website/sw.js")
       .then((registration) => {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        console.log(
+          "ServiceWorker registration successful with scope: ",
+          registration.scope
+        );
       })
       .catch((error) => {
-        console.log('ServiceWorker registration failed: ', error);
+        console.log("ServiceWorker registration failed: ", error);
       });
   });
 }
-
-
 
 // Get the button
 let topBtn = document.getElementById("top-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -33,18 +37,15 @@ function toTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
   document.getElementById("mySidenav").style.padding = "10px";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0"
+  document.getElementById("mySidenav").style.width = "0";
   document.getElementById("mySidenav").style.padding = "0";
-
 }
-
 
 //drop-dwon in nav
 var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -64,31 +65,64 @@ for (i = 0; i < dropdown.length; i++) {
 
 //store prices in object
 const prices = {
-
   analgesics: {
     acetaminophen: 500,
     aspirin: 300,
     gabapentin: 400,
     lidocaine: 200,
     opioids: 600,
-    tramadol: 400
+    tramadol: 400,
   },
   antibiotics: {
-    panadol: 21,
+    amoxicillin: 25,
+    azithromycin: 30,
+    ciprofloxacin: 41,
+    doxycycline: 21,
+    metronidazole: 20,
+    cephalexin: 28,
+  },
+  antidepressants: {
+    sertraline: 60,
+    fluoxetine: 50,
+    paroxetine: 65,
+    escitalopram: 55,
+    venlafaxine: 70,
+    duloxetine: 75,
+  },
+  antihistamines: {
+    diphenhydramine: 10,
+    loratadine: 15,
+    cetirizine: 20,
+    fexofenadine: 25,
+  },
+  antihypertensives: {
+    lisinopril: 40,
+    amlodipine: 45,
+    losartan: 50,
+    metoprolol: 55,
+    clonidine: 30,
+    hydrochlorothiazide: 35,
   },
 };
 
-//variables to store prices 
+// // Iterate over all categories and their products
+// Object.keys(prices).forEach(category => {
+//   console.log(`Category: ${category}`);
+//   Object.keys(prices[category]).forEach(productName => {
+//     console.log(`Product: ${productName}, Price: ${prices[category][productName]}`);
+//   });
+// });
+
+//variables to store prices
 let currentPrice = 0;
 let total = 0;
 
-//function to update total 
+//function to update total
 function updateTotal() {
-  let totalPrice = document.getElementById('total-price');
+  let totalPrice = document.getElementById("total-price");
   if (totalPrice) {
     totalPrice.innerText = total;
   }
-
 }
 
 //update total real time
@@ -97,8 +131,7 @@ setInterval(updateTotal, 500);
 //add to cart function
 function addCart(name) {
   let qty = document.getElementById(name).value;
-  let tabel = document.getElementById('tbody');
-
+  let tabel = document.getElementById("tbody");
 
   //validate user input
   if (qty > 0) {
@@ -110,36 +143,35 @@ function addCart(name) {
       }
     }
 
-
     //check item already exisit or not
     if (existingRow) {
-      existingRow.cells[1].textContent = parseInt(existingRow.cells[1].textContent) + parseInt(qty);
-
+      existingRow.cells[1].textContent =
+        parseInt(existingRow.cells[1].textContent) + parseInt(qty);
       for (let product in prices) {
         if (prices[product][name] !== undefined) {
-          existingRow.cells[2].textContent = parseInt(existingRow.cells[2].textContent) + (prices[product][name]) * qty;
-          total += (prices[product][name]) * qty;
+          existingRow.cells[2].textContent =
+            parseInt(existingRow.cells[2].textContent) +
+            prices[product][name] * qty;
+          total += prices[product][name] * qty;
         }
       }
-
     } else {
-
       //new item add to table
       var row = tabel.insertRow(tabel.rows.length);
-      row.classList.add('product-row');
+      row.classList.add("product-row");
 
       var cell1 = row.insertCell(0);
-      cell1.classList.add('product-name')
+      cell1.classList.add("product-name");
       var cell2 = row.insertCell(1);
-      cell2.classList.add('quantity')
-      var cell3 = row.insertCell(2)
-      cell3.classList.add('price');
+      cell2.classList.add("quantity");
+      var cell3 = row.insertCell(2);
+      cell3.classList.add("price");
       var cell4 = row.insertCell(3);
 
       let productPrice;
       for (let product in prices) {
         if (prices[product][name] !== undefined) {
-          productPrice = prices[product][name]
+          productPrice = prices[product][name];
           // break;
         }
       }
@@ -150,53 +182,42 @@ function addCart(name) {
       cell1.textContent = name;
       cell2.textContent = qty;
       cell3.textContent = currentPrice;
-      cell4.innerHTML = "<button class='deleteBtn' onclick='deleteRow(this);'>Delete</button>"
-
-
+      cell4.innerHTML =
+        "<button class='deleteBtn' onclick='deleteRow(this);'>Delete</button>";
     }
 
     //set input box value to default
     document.getElementById(name).value = "";
-
-
-
-
   } else {
-
-
-    alert("add a prodcut")
+    alert("add a prodcut");
 
     // Set a timeout to hide it after 100 milliseconds
     setTimeout(() => {
-      model.style.display = 'none';
+      // model.style.display = 'none';
     }, 1000); // Hide after 100ms
   }
 }
 
-
 //delete function
 function deleteRow(button) {
-
   // finds the nearest parent <tr> of the button
   const row = button.closest("tr");
   let deleteProductPrice = row.cells[2].textContent;
   total -= parseInt(deleteProductPrice);
   row.remove();
-
 }
 
 function checkAddedItems() {
-
   const orderItems = [];
-  const orderItemsContainer = document.getElementById('tbody');
+  const orderItemsContainer = document.getElementById("tbody");
 
   // Loop through all product rows in the form
-  const productRows = orderItemsContainer.querySelectorAll('.product-row');
+  const productRows = orderItemsContainer.querySelectorAll(".product-row");
 
-  productRows.forEach(cell => {
-    const productName = cell.querySelector('.product-name').textContent;
-    const quantity = cell.querySelector('.quantity').textContent;
-    const price = cell.querySelector('.price').textContent;
+  productRows.forEach((cell) => {
+    const productName = cell.querySelector(".product-name").textContent;
+    const quantity = cell.querySelector(".quantity").textContent;
+    const price = cell.querySelector(".price").textContent;
 
     if (productName && quantity) {
       orderItems.push({ name: productName, quantity: quantity, price: price });
@@ -206,60 +227,50 @@ function checkAddedItems() {
   return orderItems;
 }
 
-
-
 function favouriteBtn() {
-
-
-
   orderItems = checkAddedItems();
 
   if (orderItems.length > 0) {
-    localStorage.removeItem('favouriteOrder');
-    localStorage.setItem('favouriteOrder', JSON.stringify(orderItems));
-    alert('Order saved to favourites!');
+    localStorage.removeItem("favouriteOrder");
+    localStorage.setItem("favouriteOrder", JSON.stringify(orderItems));
+    alert("Order saved to favourites!");
   } else {
-    alert('Please add products to the order.');
+    alert("Please add products to the order.");
   }
-
 }
 
 function applyFavourite() {
-
-
-  const favouriteOrder = JSON.parse(localStorage.getItem('favouriteOrder'));
-
+  const favouriteOrder = JSON.parse(localStorage.getItem("favouriteOrder"));
 
   if (favouriteOrder == null) {
     alert("There's no favourite Order !!");
   } else {
-    document.getElementById('tbody').innerHTML = '';
-    let tabel = document.getElementById('tbody');
+    document.getElementById("tbody").innerHTML = "";
+    let tabel = document.getElementById("tbody");
 
     let price;
 
-    favouriteOrder.forEach(item => {
+    favouriteOrder.forEach((item) => {
       price = parseInt(item.price);
       //new item add to table
       //get last row index
       var row = tabel.insertRow(tabel.rows.length);
-      row.classList.add('product-row');
+      row.classList.add("product-row");
 
       var cell1 = row.insertCell(0);
-      cell1.classList.add('product-name')
+      cell1.classList.add("product-name");
       var cell2 = row.insertCell(1);
-      cell2.classList.add('quantity')
+      cell2.classList.add("quantity");
       var cell3 = row.insertCell(2);
-      cell2.classList.add('price')
+      cell2.classList.add("price");
       var cell4 = row.insertCell(3);
 
-
       //assign values to cells
-      cell1.textContent = item.name,
-        cell2.textContent = item.quantity;
+      (cell1.textContent = item.name), (cell2.textContent = item.quantity);
       cell3.textContent = item.price;
-      cell4.innerHTML = "<button class='deleteBtn' onclick='deleteRow(this);'>Delete</button>"
-    })
+      cell4.innerHTML =
+        "<button class='deleteBtn' onclick='deleteRow(this);'>Delete</button>";
+    });
 
     total += price;
 
@@ -274,41 +285,38 @@ function placeOrder() {
   if (orderItems.length > 0) {
     window.location.href = "pharmacy.html";
     sessionStorage.setItem("ordeditems", JSON.stringify(orderItems));
-
   } else {
     alert("Please add products to the order");
   }
 }
 
-window.addEventListener('load', function () {
-  if (window.location.pathname.includes("/pages/pharmacy.html")){
+window.addEventListener("load", function () {
+  if (window.location.pathname.includes("/pages/pharmacy.html")) {
+    let tabel = document.getElementById("tbody2");
 
-    let tabel = document.getElementById('tbody2');
+    const orderItems = JSON.parse(sessionStorage.getItem("ordeditems"));
 
-    const orderItems = JSON.parse(sessionStorage.getItem('ordeditems'));
-
-    orderItems.forEach(item => {
+    orderItems.forEach((item) => {
       //new item add to table
       var row = tabel.insertRow(tabel.rows.length);
-      row.classList.add('product-row');
+      row.classList.add("product-row");
 
       var cell1 = row.insertCell(0);
-      cell1.classList.add('product-name')
+      cell1.classList.add("product-name");
       var cell2 = row.insertCell(1);
-      cell2.classList.add('quantity')
-      var cell3 = row.insertCell(2)
-      cell3.classList.add('price');
+      cell2.classList.add("quantity");
+      var cell3 = row.insertCell(2);
+      cell3.classList.add("price");
 
       let productPrice;
       for (let product in prices) {
         if (prices[product][item.name] !== undefined) {
-          productPrice = prices[product][item.name]
+          productPrice = prices[product][item.name];
           // break;
         }
       }
 
       currentPrice = productPrice * item.quantity;
-      
 
       //assign values to cells
       cell1.textContent = item.name;
@@ -316,22 +324,20 @@ window.addEventListener('load', function () {
       cell3.textContent = currentPrice;
     });
   }
+});
 
-})
-
-
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   if (window.location.pathname.includes("/pages/thankyou.html")) {
+    // Get the current date
+    const currentDate = new Date();
 
-  // Get the current date
-  const currentDate = new Date();
+    // Add 7 days
+    currentDate.setDate(currentDate.getDate() + 7);
 
-  // Add 7 days
-  currentDate.setDate(currentDate.getDate() + 7);
+    // Format the date in a readable format (e.g., YYYY-MM-DD)
+    const futureDate = currentDate.toISOString().split("T")[0]; // This gives the date in "YYYY-MM-DD"
 
-  // Format the date in a readable format (e.g., YYYY-MM-DD)
-  const futureDate = currentDate.toISOString().split('T')[0]; // This gives the date in "YYYY-MM-DD"
-
-  // Display the new date
-  document.getElementById('dateResult').innerHTML = `${futureDate}`;
-}})
+    // Display the new date
+    document.getElementById("dateResult").innerHTML = `${futureDate}`;
+  }
+});
