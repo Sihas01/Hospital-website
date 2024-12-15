@@ -342,3 +342,33 @@ window.addEventListener("load", function () {
     document.getElementById("dateResult").innerHTML = `${futureDate}`;
   }
 });
+
+
+document.getElementById("submitform").addEventListener("submit",(event) =>  {
+  
+  let isValid = true;
+  
+  let firstName = document.getElementById("text1").value.trim();
+   let lastName = document.getElementById("text2").value.trim();
+   let address = document.getElementById("text3").value.trim();
+   let town = document.getElementById("text5").value.trim();
+
+   let city = document.getElementById("text6").value.trim();
+   let paymentMethod = document.getElementById("text7").value.trim();
+
+  if(!firstName && !lastName){
+    alert("Enter first name and last name");
+    isValid = false;
+  }else if(!address && !town && !city){
+    alert("Ener Address !!")
+    isValid = false;
+  }else if(!paymentMethod){
+    alert("Choose Payment method")
+    isValid = false;
+  }
+
+  if (!isValid) {
+    event.preventDefault();
+}
+  
+})
