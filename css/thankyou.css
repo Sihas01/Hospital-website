@@ -36,6 +36,10 @@ body{
     
 }
 
+.bc-white{
+    background-color: #ffffff;
+}
+
 @media (min-width: 992px) {
 
 
